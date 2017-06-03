@@ -16,6 +16,17 @@ li {
 	width: 990px;
 	margin: 0 auto;
 }
+input {
+	border: 0;
+	outline: none;
+}
+img {
+	opacity: 0.7;
+}
+img:hover {
+	opacity: 1;
+}
+/*头部样式*/
 .header {
   width: 100%;
 }
@@ -146,6 +157,7 @@ li {
   width: 680px;
   height: 234px;
   float: left;
+   margin-top: 18px;
 }
 .section .portrait ul {
   margin-top: 48px;
@@ -161,19 +173,116 @@ li {
   background: url(../img/activity_h.jpg) 0 0 no-repeat;
   width: 270px;
   height: 234px;
+  padding-top: 44px;
+  margin-top: 18px;
   float: right;
 }
+.activity .bg{
+	width: 270px;
+	height:190px;
+	background: #fdfdfd;
+}
+.activity .notice{
+	color: #f86e9e;
+	text-align: center;
+	font-size: 14px;
+	padding-bottom: 10px;
+}
+.activity>.bg>p{
+	padding: 0 24px;
+	line-height: 22px;
+}
+.banner_1,.banner_2{
+	width: 258px;
+	height: 49px;
+	margin-left: 24px;	
+	color: #7d7d7d;
+	padding-bottom: 10px;
+} 
+.banner_1{
+	border-bottom: 1px solid #b9b9b9;
+}
+.banner_1 span,.banner_2 span{
+	float: left;
+	width: 70px;
+	height: 50px;
+}
+.banner_1 b,.banner_2 b{
+	font-size: 26px;
+}
+.banner_1 p,.banner_2 p{
+	float: left;
+	padding-top: 10px;
+}
+
 .section .workshow {
   background: url(../img/workshow_bg.jpg) 0 0 no-repeat;
   width: 960px;
   height: 421px;
+  margin-top: 28px;
   float: left;
+}
+.workshow h3 span{
+	float: right;
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	background: #f9733d;
+	color: white;
+	font-size: 14px;
+	margin-right: 30px;
+}
+.workshow .show{
+	width: 946px;
+	height:374px;
+	padding-top: 44px;
+	margin-left: 14px;
+}
+.workshow .left_show{
+	width: 212px;
+	float: left;
+}
+.left_show span{
+	display: block;
+	text-align: center;
+	width:212px;
+	height:46px;
+	margin-top: 5px;
+	line-height: 46px;
+	background: #f2f2f1;
+	font-size: 18px;
+}
+.workshow .right_show{
+	width: 704px;
+	height: 370px;
+	float: left;
+	margin-left: 24px;
+}
+.right_show span{
+	display: block;
+	width: 213px;
+	height:36px;
+	padding-left: 6px;
+	font-weight:bold;
+	line-height: 36px;
+	background: #f2f2f1;
+}
+.right_show span em{
+	float: right;
+	margin-right: 6px;
+}
+.right_show li{
+	float: left;
+	margin-right: 15px;
+	margin-bottom: 2px;
 }
 .section .business {
   background: url(../img/business.jpg) 0 0 no-repeat;
   width: 627px;
   height: 268px;
   float: left;
+  margin-top: 24px;
+  margin-bottom: 34px;
 }
 .business_content {
 	width: 603px;
@@ -242,14 +351,99 @@ li {
 .section .showLove {
   background: url(../img/showLove.gif) 0 0 no-repeat;
   width: 286px;
-  height: 464px;
+  height: 430px;
   float: right;
+  margin-top: 24px;
+  padding-top: 34px; 
+  
+}
+#showLove{
+	width: 286px;
+    height: 428px;
+	position: relative;
+  overflow: hidden; 
+}
+.showLove #rolling{
+	height:850px;
+	position: absolute;
+	top:30px;	
+}
+.showLove li{
+	padding: 10px 6px 0px;
+	height: 96px;
+}
+.showLove li a img{
+	float: left;
+	padding-right: 12px;
+}
+.showLove li h4{
+	color: #f86e9e;	
+}
+.showLove li h4 em{
+	float: left;
+	width: 4px;
+	height: 10px;
+	margin-top:3px;
+	margin-right: 8px;
+	background: url(../img/san.gif) no-repeat center;
+}
+.showLove li p{
+	text-indent: 1em;
+	line-height: 24px;
+}
+.showLove li div{
+	float: left;
+	width: 254px;
+	height:24px;
+	line-height: 24px;
+	padding-left: 20px;
+	padding-right: 12px;
+	color: #7e7e7e;
+	margin-top: 4px;
+	background: #f7f7f7;
+}
+.showLove li div span{
+	float: right;	
+	color: #f86e9e;
+}
+/*礼服*/
+.section .showdress {
+  background: url(../img/showdress.jpg) 0 0 no-repeat;
+  width: 627px;
+  height: 268px;
+  float: left;
+  margin-top: 24px;
+  
+}
+.showdress h3 span{
+	float: right;
+	text-align: center;
+	width: 50px;
+	height: 20px;
+	background: #f9733d;
+	color: white;
+	font-size: 14px;
+	margin-right: 30px;
+}
+.showdress_list {
+	width: 609px;
+  	height: 200px;
+  	margin: 40px 0;
+  	padding-left: 12px;
+}
+.showdress_list li {
+	float: left;
+	margin-right: 19px;
+}
+.showdress_list>li.active {
+	margin-right: 0;
 }
 .section .showdress {
   background: url(../img/showdress.jpg) 0 0 no-repeat;
   width: 627px;
   height: 268px;
   float: left;
+  margin-bottom: 30px;
 }
 .showdress_list {
 	width: 609px;
